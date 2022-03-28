@@ -1,0 +1,180 @@
+/* Colors and fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  /*  background: rgb(210,73,48);
+  background: linear-gradient(30deg, rgba(210,73,48,1) 32%, rgba(246,191,132,1) 73%, rgba(181,90,184,1) 100%); */
+  /*background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);*/
+  background: rgb(131,58,180);
+  background: linear-gradient(27deg, rgba(131,58,180,1) 18%, rgba(253,29,29,0.94859950816264) 52%, rgba(252,176,69,1) 100%); 
+  height:  100vh;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 800px;
+}
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  display: flex;
+}
+
+.producer {
+  background-image: linear-gradient(36deg, rgba(0,0,0,0.8657894736842106) 28%, rgba(18,18,18,0.3026315789473685) 50%, rgba(255,255,255,0) 69%), url("images/profile_blur.png");
+  background-position: center;
+  background-size: cover;
+  margin:  0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  flex-grow: 2;
+  border-top-left-radius : 4px;
+  border-bottom-left-radius: 4px;
+  height: 300px;
+}
+
+.producer ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.producer ul li {
+  display: inline;
+  font-size: 22px;
+  padding-right: 5px;
+}
+
+.producer h1 {
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.producer .twitter {
+  color: #1DA1F2;
+}
+
+.producer .instagram {
+  background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.producer .spotify {
+  color: #1DB954;
+}
+
+.producer img {
+ height: 22px;
+}
+
+
+
+.drumkit {
+  background-image: linear-gradient(0deg, rgba(116,40,119,0.6572829815519958) 28%, rgba(0,0,0,0.8365546902354692) 100%), url("images/vador.jpg");
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+  padding:  20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius:  4px;
+  padding-bottom: 30px;
+}
+
+.drumkit p {
+  font-size : 14px;
+  color: rgba(200, 200, 200, 0.7) ;
+  line-height: 1;
+}
+
+.drumkit h2 {
+  font-size: 22px;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, .6);
+  opacity: 0.7;
+}
+
+
+.drumkit .btn {
+  border-radius: 15px;
+  padding: 15px 25px;
+  box-shadow:  0 10px 30px rgba(0, 0, 0, 0.3);
+  color:  white;
+  background-color: rgb(116,40,119);
+  visibility: hidden;
+}
+
+.drumkit:hover {
+  opacity:  0.9;
+  cursor: pointer;
+}
+
+.drumkit:hover h2 {
+  opacity:  1;
+}
+
+/*@media (max-width: 1200px) {
+  /* For a screen < 1200px, this CSS will be read */
+/*}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+/*}*/
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+    .producer {
+     flex-grow: 1;
+    }
+    .drumkit {
+      flex-grow: 2;
+    }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+    .container {
+      max-width: 80%;
+    }
+    .producer {
+       display:  none;
+    }
+    .drumkit {
+      flex-grow: 1;
+      height: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
